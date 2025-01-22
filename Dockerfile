@@ -18,7 +18,7 @@ COPY triangle_detection.py .
 
 RUN pip install uv
 # Install Python dependencies
-RUN uv pip install --no-cache-dir -r requirements.txt
+RUN uv pip install --no-cache-dir -r requirements.txt --system
 
 # Expose the port the app runs on
 EXPOSE 8000
