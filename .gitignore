@@ -1,0 +1,29 @@
+# Ignore everything
+*
+
+# But not these files...
+!.gitignore
+!main.py
+!aruco_triangle_detection.py
+!requirements.txt
+
+# Ignore all image files
+*.png
+*.jpg
+*.jpeg
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment directories
+.env
+.venv
+env/
+venv/
+ENV/
+
+# IDE settings
+.vscode/
+.idea/
