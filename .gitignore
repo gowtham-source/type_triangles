@@ -6,6 +6,7 @@
 !main.py
 !aruco_triangle_detection.py
 !requirements.txt
+!Dockerfile
 
 # Ignore all image files
 *.png

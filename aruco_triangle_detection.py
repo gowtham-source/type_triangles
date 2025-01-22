@@ -16,11 +16,11 @@ def detect_aruco_markers(image):
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
     
     # Create ArUco dictionary and detector
-    # aruco_dict = cv2.aruco.getPredefinedDictionary(cv2.aruco.DICT_ARUCO_ORIGINAL)
+    aruco_dict = cv2.aruco.getPredefinedDictionary(cv2.aruco.DICT_ARUCO_ORIGINAL)
     # parameters = cv2.aruco.DetectorParameters()
     # detector = cv2.aruco.ArucoDetector(aruco_dict, parameters)
     
-    aruco_dict = cv2.aruco.getPredefinedDictionary(cv2.aruco.DICT_4X4_50)
+    # aruco_dict = cv2.aruco.getPredefinedDictionary(cv2.aruco.DICT_4X4_50)
     parameters = cv2.aruco.DetectorParameters()
     detector = cv2.aruco.ArucoDetector(aruco_dict, parameters)
     # Detect ArUco markers
