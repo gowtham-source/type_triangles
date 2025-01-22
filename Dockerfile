@@ -16,8 +16,9 @@ COPY main.py .
 COPY aruco_triangle_detection.py .
 COPY triangle_detection.py .
 
+Run pip install uv
 # Install Python dependencies
-RUN pip install --no-cache-dir -r requirements.txt
+RUN uv pip install --no-cache-dir -r requirements.txt
 
 # Expose the port the app runs on
 EXPOSE 8000
