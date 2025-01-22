@@ -5,6 +5,7 @@
 !.gitignore
 !main.py
 !aruco_triangle_detection.py
+!triangle_detection.py
 !requirements.txt
 !Dockerfile
 
