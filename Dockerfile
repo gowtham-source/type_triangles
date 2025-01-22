@@ -16,7 +16,7 @@ COPY main.py .
 COPY aruco_triangle_detection.py .
 COPY triangle_detection.py .
 
-Run pip install uv
+RUN pip install uv
 # Install Python dependencies
 RUN uv pip install --no-cache-dir -r requirements.txt
 
