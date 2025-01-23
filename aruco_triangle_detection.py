@@ -364,7 +364,7 @@ def explain_triangle_with_gemini(angles, distances, classification):
 def main():
     try:
         # Process the image
-        image, angles, distances, classification, area, perimeter = process_image_with_calibration('up.png')
+        image, angles, distances, classification, area, perimeter = process_image_with_calibration('karte.jpg')
         
         # Save the result
         cv2.imwrite('aruco_triangle_result.jpg', image)

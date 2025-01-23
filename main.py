@@ -7,6 +7,7 @@ import logging
 import io
 import os
 import google.generativeai as genai
+import base64
 
 # Configure logging
 logging.basicConfig(
@@ -109,6 +110,7 @@ async def analyze_triangle(file: UploadFile = File(...)):
         # Encode result image
         _, img_encoded = cv2.imencode('.jpg', result_image)
         img_base64 = img_encoded.tobytes()
+        img_base64_string = base64.b64encode(img_base64).decode('utf-8')
         
         # Prepare response
         response = {
@@ -117,7 +119,7 @@ async def analyze_triangle(file: UploadFile = File(...)):
             "classification": classification,
             "area": float(area),
             "perimeter": float(perimeter),
-            "processed_image": img_base64,
+            "processed_image": img_base64_string,
             "explanation": explanation
         }
         
